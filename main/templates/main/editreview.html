@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="text-center">Edit Review</h3>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if error %}
+                    <strong style="color: red;">{{ error }}</strong>
+                {% endif %}
+                <input type="submit" value="Save Changes" class="btn btn-danger">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

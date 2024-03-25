@@ -25,7 +25,7 @@ SECRET_KEY = 'hn+6t#k*5f6l+tbj)_10wz-i3uy-b$isbyk#vf(gh4n4=r#2#+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*cd "]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -144,8 +144,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Postgres DB Production
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

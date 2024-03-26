@@ -25,6 +25,7 @@ SECRET_KEY = 'hn+6t#k*5f6l+tbj)_10wz-i3uy-b$isbyk#vf(gh4n4=r#2#+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = ["*"]
 
 
@@ -149,3 +150,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # DATABASES['default'].update(db_from_env)
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAuthField'
+
+# import os
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
